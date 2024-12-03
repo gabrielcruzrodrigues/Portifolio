@@ -95,23 +95,20 @@
                     <img src="assets/images/myinvest-4.png">
                 </div>
 
-                <div class="more-info">
-                    <button class="more-info-button">mais informações</button>
+                <button class="more-info-button" (click)="showMoreInfo('myInvest')" #myInvestMoreInfoButton>mais informações</button>
 
-                    <div class="info">
-                        <p class="description">Equipe de Desenvolvimento:</p>
-                        <p class="description">Marcos Morais (Autor)</p>
-                        <p class="description">Gabriel Rodrigues (Desenvolvedor)</p>
+                <div class="info" #myInvestInfo>
+                    <p class="description">Equipe de Desenvolvimento:</p>
+                    <p class="description">Marcos Morais (Autor)</p>
+                    <p class="description">Gabriel Rodrigues (Desenvolvedor)</p>
 
 
-                        <p class="description">O principal objetivo do MyInvest é ajudar investidores a tomar decisões
-                            informadas sobre a compra de ações e FIIs, com base no cálculo do preço-teto segundo o
-                            modelo de
-                            Décio Bazin. A aplicação oferece uma interface intuitiva para que os usuários possam
-                            visualizar
-                            e gerenciar suas carteiras de ativos, recebendo sugestões de compra ou venda.</p>
-                    </div>
-
+                    <p class="description">O principal objetivo do MyInvest é ajudar investidores a tomar decisões
+                        informadas sobre a compra de ações e FIIs, com base no cálculo do preço-teto segundo o
+                        modelo de
+                        Décio Bazin. A aplicação oferece uma interface intuitiva para que os usuários possam
+                        visualizar
+                        e gerenciar suas carteiras de ativos, recebendo sugestões de compra ou venda.</p>
                 </div>
 
     </div>
