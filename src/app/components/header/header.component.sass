@@ -1,7 +1,7 @@
 @use '../../sass/colors' as *
 
 .header
-     color: $text-primary-color
+     color: $primary-color
      padding-inline: 16px
 
 .navbar 
@@ -16,7 +16,7 @@
 .logo
      font-size: 20px
      text-decoration: none
-     color: $text-primary-color
+     color: $primary-color
 
 .nav-list
      display: flex
@@ -31,14 +31,14 @@
      transition: border-bottom 0.1
 
      &:hover
-          border-bottom: 2px solid $text-primary-color
+          border-bottom: 2px solid $primary-color
 
 
 .hamburger
      display: none
      border: none
      background: none
-     border-top: 3px solid $text-primary-color
+     border-top: 3px solid $primary-color
      cursor: pointer
 
 .hamburger::before,
@@ -47,7 +47,7 @@
      display: block
      width: 30px
      height: 3px
-     background: $text-primary-color
+     background: $primary-color
      margin-top: 5px
      position: relative
      transition: 0.3s

@@ -1,9 +1,14 @@
+@use '../../sass/colors' as *
+     
+// Main section
+     
 .main-section
      display: flex
      flex-direction: column
      align-items: center
      padding: 20px
      margin-top: 30px
+     margin-bottom: 30px
      gap: 20px
 
 .headline
@@ -23,10 +28,8 @@
      font-size: 23px
 
 .image 
-     height: 400px
      width: 100%
      display: block 
-     align-items: center
      text-align: center
 
 .image img
@@ -49,11 +52,11 @@
           display: flex
           flex-direction: row
           padding: 5% 13%
-          margin-top: 50px
+          margin-top: 0
           gap: 5%
+          height: 700px
 
      .headline
-          height: 400px
           width: 100%
           text-align: left
 
@@ -69,7 +72,6 @@
           font-size: 25px
 
      .image 
-          height: 400px
           width: 100%
           display: flex
           align-items: center
@@ -80,4 +82,71 @@
 
      .technologies img
           width: 70px
-          
+
+@media (min-width: 1500px) 
+     .main-section
+          gap: 5%
+          justify-content: center
+          align-items: center
+
+     .headline
+          width: 40%
+
+     .image 
+          width: 40% 
+          display: flex 
+          justify-content: center 
+          align-items: center
+
+@media (min-width: 1688px)
+     .main-section
+          gap: 0
+
+
+// about me
+.about-me
+     background-color: $primary-color
+     padding: 20px
+     color: white
+
+.about-me .title
+     text-align: center
+     padding: 20px
+     font-size: 40px
+
+.about-me .subtitle
+     text-align: center
+     padding: 20px
+     font-size: 30px
+
+.about-me .description
+     font-size: 20px
+     text-align: justify
+     margin-bottom: 35px
+
+.about-me .list-container
+     padding: 15px
+     list-style: none
+
+.about-me .list-title
+     font-size: 25px
+     display: block
+     margin-bottom: 15px
+     text-align: center 
+
+
+.about-me .list-subtitle
+     font-size: 25px
+     display: block
+     margin-bottom: 15px
+     color: $secundary-color
+     text-align: center 
+
+@media (min-width: 1240px)
+     .about-me
+          padding: 30px 70px
+
+@media (min-width: 1688px)
+     .about-me
+          padding: 30px 90px
+
