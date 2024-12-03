@@ -1,7 +1,7 @@
 @use '../../sass/colors' as *
-     
+
 // Main section
-     
+
 .main-section
      display: flex
      flex-direction: column
@@ -27,13 +27,13 @@
      font-weight: 500
      font-size: 23px
 
-.image 
+.image
      width: 100%
-     display: block 
+     display: block
      text-align: center
 
 .image img
-     width: 100% 
+     width: 100%
      max-width: 500px
      height: auto
      display: inline-block
@@ -41,13 +41,81 @@
 .technologies
      margin-top: 20px
      display: flex
-     gap: 15px 
+     gap: 15px
      justify-content: center
 
 .technologies img
      width: 60px
 
+// about me
+
+.about-me
+     background-color: $primary-color
+     padding: 20px
+     color: white
+     position: relative
+
+.about-me .title
+     text-align: center
+     padding: 20px
+     font-size: 40px
+
+.about-me .subtitle
+     text-align: center
+     padding: 20px
+     font-size: 30px
+
+.about-me .description
+     font-size: 20px
+     text-align: justify
+     margin-bottom: 35px
+
+.about-me .list-container
+     padding: 15px
+     list-style: none
+     position: relative
+
+.about-me .list-title
+     font-size: 25px
+     display: block
+     margin-bottom: 15px
+     text-align: center
+
+.about-me .list-subtitle
+     font-size: 25px
+     display: block
+     margin-bottom: 15px
+     color: $secundary-color
+     text-align: center
+
+
+@media (min-width: 834px)
+     // about me
+     .about-me .list
+          margin-bottom: 40px
+          position: relative
+          padding-left: 40px
+
+     .about-me .list:before
+          content: ""
+          position: absolute
+          left: 15px
+          top: 0
+          bottom: 0
+          width: 3px
+          background: repeating-linear-gradient(white, white 5px, transparent 5px, transparent 10px)
+
+     .about-me .dot
+          position: absolute
+          left: 2px
+          top: 0
+          width: 30px
+          height: 30px
+          background: white
+          border-radius: 50%
+
 @media (min-width: 1240px)
+     //  main section
      .main-section
           display: flex
           flex-direction: row
@@ -71,7 +139,7 @@
           font-weight: 500
           font-size: 25px
 
-     .image 
+     .image
           width: 100%
           display: flex
           align-items: center
@@ -83,7 +151,14 @@
      .technologies img
           width: 70px
 
-@media (min-width: 1500px) 
+     // about me
+
+     .about-me
+          padding: 30px 70px
+
+
+@media (min-width: 1500px)
+     //  main section
      .main-section
           gap: 5%
           justify-content: center
@@ -92,61 +167,19 @@
      .headline
           width: 40%
 
-     .image 
-          width: 40% 
-          display: flex 
-          justify-content: center 
+     .image
+          width: 40%
+          display: flex
+          justify-content: center
           align-items: center
 
 @media (min-width: 1688px)
+     //  main section
      .main-section
           gap: 0
 
-
-// about me
-.about-me
-     background-color: $primary-color
-     padding: 20px
-     color: white
-
-.about-me .title
-     text-align: center
-     padding: 20px
-     font-size: 40px
-
-.about-me .subtitle
-     text-align: center
-     padding: 20px
-     font-size: 30px
-
-.about-me .description
-     font-size: 20px
-     text-align: justify
-     margin-bottom: 35px
-
-.about-me .list-container
-     padding: 15px
-     list-style: none
-
-.about-me .list-title
-     font-size: 25px
-     display: block
-     margin-bottom: 15px
-     text-align: center 
-
-
-.about-me .list-subtitle
-     font-size: 25px
-     display: block
-     margin-bottom: 15px
-     color: $secundary-color
-     text-align: center 
-
-@media (min-width: 1240px)
-     .about-me
-          padding: 30px 70px
-
-@media (min-width: 1688px)
+     // about me
      .about-me
           padding: 30px 90px
 
+     
