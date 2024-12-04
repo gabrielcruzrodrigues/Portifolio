@@ -80,8 +80,10 @@
 </section>
 
 <section class="projects" id="projects">
-    <h3 class="title">PROJETOS</h3>
-    <p class="subtitle">Aqui você vai encontrar os principais projetos que construi ou participei</p>
+    <div>
+        <h3 class="title">PROJETOS</h3>
+        <p class="subtitle">Aqui você vai encontrar os principais projetos que construi ou participei</p>
+    </div>
 
     <div class="project">
         <p class="project-name">MyInvest</p>
@@ -105,10 +107,11 @@
                     informações</button>
 
                 <div class="info" #myInvestInfo>
-                    <p class="info-title">Equipe de Desenvolvimento:</p>
-                    <p class="info-content">Marcos Morais (Autor)<a></a></p>
-                    <p class="info-content">Gabriel Rodrigues (Desenvolvedor)</p>
+                    <p class="info-title">- Equipe de Desenvolvimento -</p>
+                    <p class="info-content"><a href="https://www.linkedin.com/in/marcosmoraisjr/" target="_blank"><i class="fa-brands fa-linkedin person-icon"></i></a>Marcos Morais (Autor)</p>
+                    <p class="info-content"><a href="https://www.linkedin.com/in/gabrielcruzrodrigues/" target="_blank"><i class="fa-brands fa-linkedin person-icon"></i></a>Gabriel Rodrigues (Desenvolvedor)</p>
 
+                    <p class="info-title">- Video demonstrativo -</p>
                     <div class="player">
                         <iframe width="100%" height="100%" [src]="myInvestUrlVideo" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -116,15 +119,15 @@
                         </iframe>
                     </div>
 
-                    <p class="info-title">Funcionalidades Principais</p>
+                    <p class="info-title">- Funcionalidades Principais -</p>
                     <ul class="info-ul">
-                        <li>Cálculo do Preço-Teto: Utiliza o modelo de Décio Bazin para calcular o preço-teto de ações e
+                        <li><span class="emphasis">Cálculo do Preço-Teto:</span> Utiliza o modelo de Décio Bazin para calcular o preço-teto de ações e
                             FIIs, indicando se o ativo está abaixo do valor ideal para compra.</li>
-                        <li>Sugestão de Compra: Com base no preço-teto e no preço atual, a aplicação sugere se o usuário
+                        <li><span class="emphasis">Sugestão de Compra:</span> Com base no preço-teto e no preço atual, a aplicação sugere se o usuário
                             deve comprar ou não o ativo.</li>
-                        <li>Gestão de Carteira: Permite que os usuários visualizem, adicionem e removam ativos de sua
+                        <li><span class="emphasis">Gestão de Carteira:</span> Permite que os usuários visualizem, adicionem e removam ativos de sua
                             carteira, mantendo um histórico de decisões.</li>
-                        <li>Interface Amigável: O sistema conta com uma interface moderna e responsiva desenvolvida em
+                        <li><span class="emphasis">Interface Amigável:</span> O sistema conta com uma interface moderna e responsiva desenvolvida em
                             Angular, facilitando o acesso às informações.</li>
                     </ul>
 
@@ -132,6 +135,14 @@
                         <img src="assets/images/myinvest-2.png">
                         <img src="assets/images/myinvest-3.png">
                     </div>
+
+                    <p class="info-title">- Detalhes técnicos -</p>
+                    <ul class="info-ul2">
+                        <li><span class="emphasis">Backend:</span>ASP.NET Core</li>
+                        <li><span class="emphasis">Frontend:</span>Angular</li>
+                        <li><span class="emphasis">Banco de Dados:</span>PostgresSql</li>
+                        <li><span class="emphasis">Integrações e APIs utilizadas:</span>YahooFinance</li>
+                    </ul>
                 </div>
 
     </div>
