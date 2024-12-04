@@ -108,8 +108,11 @@
 
                 <div class="info" #myInvestInfo>
                     <p class="info-title">- Equipe de Desenvolvimento -</p>
-                    <p class="info-content"><a href="https://www.linkedin.com/in/marcosmoraisjr/" target="_blank"><i class="fa-brands fa-linkedin person-icon"></i></a>Marcos Morais (Autor)</p>
-                    <p class="info-content"><a href="https://www.linkedin.com/in/gabrielcruzrodrigues/" target="_blank"><i class="fa-brands fa-linkedin person-icon"></i></a>Gabriel Rodrigues (Desenvolvedor)</p>
+                    <p class="info-content"><a href="https://www.linkedin.com/in/marcosmoraisjr/" target="_blank"><i
+                                class="fa-brands fa-linkedin person-icon"></i></a>Marcos Morais (Autor)</p>
+                    <p class="info-content"><a href="https://www.linkedin.com/in/gabrielcruzrodrigues/"
+                            target="_blank"><i class="fa-brands fa-linkedin person-icon"></i></a>Gabriel Rodrigues
+                        (Desenvolvedor)</p>
 
                     <p class="info-title">- Video demonstrativo -</p>
                     <div class="player">
@@ -121,13 +124,17 @@
 
                     <p class="info-title">- Funcionalidades Principais -</p>
                     <ul class="info-ul">
-                        <li><span class="emphasis">Cálculo do Preço-Teto:</span> Utiliza o modelo de Décio Bazin para calcular o preço-teto de ações e
+                        <li><span class="emphasis">Cálculo do Preço-Teto:</span> Utiliza o modelo de Décio Bazin para
+                            calcular o preço-teto de ações e
                             FIIs, indicando se o ativo está abaixo do valor ideal para compra.</li>
-                        <li><span class="emphasis">Sugestão de Compra:</span> Com base no preço-teto e no preço atual, a aplicação sugere se o usuário
+                        <li><span class="emphasis">Sugestão de Compra:</span> Com base no preço-teto e no preço atual, a
+                            aplicação sugere se o usuário
                             deve comprar ou não o ativo.</li>
-                        <li><span class="emphasis">Gestão de Carteira:</span> Permite que os usuários visualizem, adicionem e removam ativos de sua
+                        <li><span class="emphasis">Gestão de Carteira:</span> Permite que os usuários visualizem,
+                            adicionem e removam ativos de sua
                             carteira, mantendo um histórico de decisões.</li>
-                        <li><span class="emphasis">Interface Amigável:</span> O sistema conta com uma interface moderna e responsiva desenvolvida em
+                        <li><span class="emphasis">Interface Amigável:</span> O sistema conta com uma interface moderna
+                            e responsiva desenvolvida em
                             Angular, facilitando o acesso às informações.</li>
                     </ul>
 
@@ -150,15 +157,68 @@
     <div class="project">
         <p class="project-name">Minha Casa</p>
         <p class="description">O projeto MinhaCasa é uma plataforma robusta e intuitiva voltada para facilitar a
-            experiência de compra, venda e aluguel de imóveis. Desenvolvido com as mais recentes tecnologias Java,
-            Spring Boot, Spring Security, PostgreSQL, JPA, Hibernate, Docker, Angular e TypeScript, o MinhaCasa oferece
+            experiência de compra, venda e aluguel de imóveis. Desenvolvido com as mais recentes tecnologias do mercado:
+            Java,
+            Spring Boot, Angular entre outros, o MinhaCasa oferece
             uma solução completa para usuários interessados no mercado imobiliário.</p>
+
+        <p class="description">O objetivo desta plataforma é centralizar a oferta de imóveis de todos os tipos, conectando compradores e
+            vendedores de forma eficiente. Ela permite que qualquer pessoa publique seus imóveis com facilidade e
+            oferece aos compradores uma ferramenta avançada de filtros, permitindo a busca precisa por propriedades que
+            atendam às suas necessidades, eliminando esforços desnecessários e otimizando a experiência de negociação.
+        </p>
+
+        <div class="image">
+            <img src="assets/images/minhacasa-3.png">
+            <img src="assets/images/minhacasa-4.png">
+        </div>
 
         <button class="more-info-button" (click)="showMoreInfo('minhaCasa')" #minhaCasaMoreInfoButton>mais
             informações</button>
 
         <div class="info" #minhaCasaInfo>
+            <p class="info-title">- Equipe de Desenvolvimento -</p>
+            <p class="info-content"><a href="https://www.linkedin.com/in/gabrielcruzrodrigues/" target="_blank"><i
+                        class="fa-brands fa-linkedin person-icon"></i></a>Gabriel Rodrigues (Autor e desenvolvedor)</p>
 
+            <p class="info-title">- Github do projeto -</p>
+            <p class="info-content"><a href="https://github.com/gabrielcruzrodrigues/MinhaCasa_Plataforma-comercial-de-imoveis" target="_blank"><i
+                class="fa-brands fa-github person-icon"></i>clique aqui para conhecer o Github do projeto</a></p>
+
+            <p class="info-title">- Video demonstrativo -</p>
+            <div class="player">
+                <iframe width="100%" height="100%" [src]="myInvestUrlVideo" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <p class="info-title">- Funcionalidades Principais -</p>
+            <ul class="info-ul">
+                <li><span class="emphasis">Super filtro:</span> Sendo este o principal diferencial da plataforma, o
+                    super filtro possibilita uma busca exata e específica, eliminando resultados indesejados e
+                    redundantes.</li>
+                <li><span class="emphasis">Cadastro de imóveis interativo:</span> O cadastro na plataforma oferece
+                    visualização prática das imagens selecionadas e um menu intuitivo, de fácil entendimento e uso.</li>
+                <li><span class="emphasis">Dados personalizados de cada imóvel:</span> Além das informações básicas, o
+                    usuário pode acessar diversos detalhes adicionais sobre o imóvel, uma funcionalidade que auxilia na
+                    tomada da melhor decisão possível.</li>
+                <li><span class="emphasis">Contato direto com o proprietário:</span> Ao acessar as informações do
+                    imóvel, o usuário também tem acesso aos contatos do proprietário, incluindo e-mail, telefone e um
+                    link direto para o WhatsApp.</li>
+            </ul>
+
+            <div class="info-image">
+                <img src="assets/images/minhacasa-1.png">
+                <img src="assets/images/minhacasa-2.png">
+            </div>
+
+            <p class="info-title">- Detalhes técnicos -</p>
+            <ul class="info-ul2">
+                <li><span class="emphasis">Backend:</span>Java | Spring Boot | Spring Security | Jpa | Hibernate | Docker</li>
+                <li><span class="emphasis">Frontend:</span>Angular</li>
+                <li><span class="emphasis">Banco de Dados:</span>PostgresSql</li>
+            </ul>
         </div>
     </div>
 </section>
