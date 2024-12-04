@@ -85,10 +85,16 @@
 
     <div class="project">
         <p class="project-name">MyInvest</p>
+
         <p class="description">MyInvest é uma aplicação web composta por uma API desenvolvida em C# | ASP.NET e um
             cliente web em Angular. O objetivo do sistema é fornecer informações detalhadas sobre a carteira de ativos
             dos usuários, calculando o preço-teto (modelo de Bazin) para ações e FIIs e sugerindo a compra ou não do
             ativo com base no preço atual < preço-teto.</p>
+
+                <p class="description">O principal objetivo do MyInvest é ajudar investidores a tomar decisões
+                    informadas sobre a compra de ações e FIIs, com base no cálculo do preço-teto segundo o
+                    modelo de Décio Bazin. A aplicação oferece uma interface intuitiva para que os usuários possam
+                    visualizar e gerenciar suas carteiras de ativos, recebendo sugestões de compra ou venda.</p>
 
                 <div class="image">
                     <img src="assets/images/myinvest-1.png">
@@ -103,15 +109,11 @@
                     <p class="info-content">Marcos Morais (Autor)<a></a></p>
                     <p class="info-content">Gabriel Rodrigues (Desenvolvedor)</p>
 
-                    <p class="info-description">O principal objetivo do MyInvest é ajudar investidores a tomar decisões
-                        informadas sobre a compra de ações e FIIs, com base no cálculo do preço-teto segundo o
-                        modelo de
-                        Décio Bazin. A aplicação oferece uma interface intuitiva para que os usuários possam
-                        visualizar
-                        e gerenciar suas carteiras de ativos, recebendo sugestões de compra ou venda.</p>
-
                     <div class="player">
-
+                        <iframe width="100%" height="100%" [src]="myInvestUrlVideo" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
                     </div>
 
                     <p class="info-title">Funcionalidades Principais</p>
@@ -132,5 +134,20 @@
                     </div>
                 </div>
 
+    </div>
+
+    <div class="project">
+        <p class="project-name">Minha Casa</p>
+        <p class="description">O projeto MinhaCasa é uma plataforma robusta e intuitiva voltada para facilitar a
+            experiência de compra, venda e aluguel de imóveis. Desenvolvido com as mais recentes tecnologias Java,
+            Spring Boot, Spring Security, PostgreSQL, JPA, Hibernate, Docker, Angular e TypeScript, o MinhaCasa oferece
+            uma solução completa para usuários interessados no mercado imobiliário.</p>
+
+        <button class="more-info-button" (click)="showMoreInfo('minhaCasa')" #minhaCasaMoreInfoButton>mais
+            informações</button>
+
+        <div class="info" #minhaCasaInfo>
+
+        </div>
     </div>
 </section>
