@@ -16,10 +16,13 @@ export class HomeComponent {
   @ViewChild('minhaCasaMoreInfoButton', { static: true }) minhaCasaMoreInfoButton!: ElementRef<HTMLDivElement>
 
   myInvestUrlVideo: SafeResourceUrl;
+  minhacasaUrlVideo: SafeResourceUrl;
 
   constructor(private sanitizer: DomSanitizer) {
     const videoId = 'n4BmiD2IX20';
     this.myInvestUrlVideo = this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${videoId}`);
+    const minhaCasaId = 'uuN6oJvt7sA';
+    this.minhacasaUrlVideo = this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${minhaCasaId}`);
   }
 
   showMoreInfo(option: string): void {
