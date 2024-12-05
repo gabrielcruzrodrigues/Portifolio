@@ -1,9 +1,10 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { SocialComponent } from '../../components/social/social.component';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [SocialComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.sass'
 })
